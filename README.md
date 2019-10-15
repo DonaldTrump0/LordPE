@@ -5,10 +5,10 @@
 
 
 目录说明:
+
 	LordPE.sln: vs2019工程文件，可直接双击打开项目
 	LordPE/LordPE.vcxproj: vs2019工程文件
 	LordPE/LordPE.vcxproj.filters: vs2019工程文件
-
 	LordPE/wWinMain.cpp: 项目入口
 	LordPE/DialogBox.cpp: DialogBox以及对应的回调函数
 	LordPE/PETools.cpp: PE文件相关的工具函数
