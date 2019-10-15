@@ -143,13 +143,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="PETools.cpp" />
+    <ClCompile Include="DialogBox.cpp" />
     <ClCompile Include="wWinMain.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PETools.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="DialogBox.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="LordPE.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="LoadPE.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

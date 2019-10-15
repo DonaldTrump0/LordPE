@@ -18,9 +18,21 @@
     <ClCompile Include="wWinMain.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="PETools.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PETools.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogBox.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
@@ -28,5 +40,10 @@
     <ResourceCompile Include="LordPE.rc">
       <Filter>资源文件</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="LoadPE.ico">
+      <Filter>资源文件</Filter>
+    </Image>
   </ItemGroup>
 </Project>
