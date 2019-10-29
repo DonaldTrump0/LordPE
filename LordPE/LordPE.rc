@@ -15,7 +15,7 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 中文(简体，中国) resources
+// Chinese (Simplified, PRC) resources
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
 LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
@@ -51,18 +51,19 @@ END
 // Dialog
 //
 
-IDD_DIALOG_MAIN DIALOGEX 0, 0, 385, 224
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 399, 227
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
 CAPTION "[ Lord PE ]"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    GROUPBOX        "",IDC_STATIC,7,7,303,210
-    GROUPBOX        "",IDC_STATIC,318,7,60,210
-    PUSHBUTTON      "PE Viewer",IDC_BUTTON_PE_VIEWER,326,24,45,18
-    PUSHBUTTON      "About",IDC_BUTTON_ABOUT,326,159,45,18
-    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,326,188,45,18
+    GROUPBOX        "",IDC_STATIC,7,7,303,213
+    GROUPBOX        "",IDC_STATIC,320,7,72,213
+    PUSHBUTTON      "PE Viewer",IDC_BUTTON_PE_VIEWER,329,24,52,18
+    PUSHBUTTON      "About",IDC_BUTTON_ABOUT,329,159,45,18
+    PUSHBUTTON      "Exit",IDC_BUTTON_EXIT,329,188,45,18
     CONTROL         "",IDC_LIST_PROCESS,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,17,27,283,82
     CONTROL         "",IDC_LIST_MODULE,"SysListView32",LVS_REPORT | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,17,121,283,82
+    PUSHBUTTON      "Add Shellcode",IDC_BUTTON_ADD_SHELLCODE,329,51,52,18
 END
 
 IDD_DIALOG_ABOUT DIALOGEX 0, 0, 310, 93
@@ -239,6 +240,21 @@ BEGIN
     EDITTEXT        IDC_EDIT_IAT_TABLE,7,7,296,162,ES_MULTILINE | ES_AUTOHSCROLL | WS_VSCROLL
 END
 
+IDD_DIALOG_ADD_SHELL DIALOGEX 0, 0, 298, 133
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "[ Add Shell ]"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Software:",IDC_STATIC,31,64,31,8
+    LTEXT           "Shell:",IDC_STATIC,32,36,19,8
+    GROUPBOX        "",IDC_STATIC,17,19,266,69
+    PUSHBUTTON      "...",IDC_BUTTON_SHELL_PATH,247,35,15,12
+    PUSHBUTTON      "...",IDC_BUTTON_SRC_PATH,247,62,15,12
+    EDITTEXT        IDC_EDIT_SHELL_PATH,72,34,160,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SRC_PATH,71,62,160,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Start",IDC_BUTTON_START,237,99,45,18
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -251,9 +267,9 @@ BEGIN
     IDD_DIALOG_MAIN, DIALOG
     BEGIN
         LEFTMARGIN, 7
-        RIGHTMARGIN, 378
+        RIGHTMARGIN, 392
         TOPMARGIN, 7
-        BOTTOMMARGIN, 217
+        BOTTOMMARGIN, 220
     END
 
     IDD_DIALOG_ABOUT, DIALOG
@@ -335,6 +351,14 @@ BEGIN
         TOPMARGIN, 7
         BOTTOMMARGIN, 169
     END
+
+    IDD_DIALOG_ADD_SHELL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 291
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
 END
 #endif    // APSTUDIO_INVOKED
 
@@ -399,6 +423,11 @@ BEGIN
     0
 END
 
+IDD_DIALOG_ADD_SHELL AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
 
 /////////////////////////////////////////////////////////////////////////////
 //
@@ -409,7 +438,7 @@ END
 // remains consistent on all systems.
 IDI_ICON_ICON           ICON                    "C:\\Users\\12269\\source\\repos\\LordPE\\LordPE\\LoadPE.ico"
 
-#endif    // 中文(简体，中国) resources
+#endif    // Chinese (Simplified, PRC) resources
 /////////////////////////////////////////////////////////////////////////////
 
 

@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ 生成的包含文件。
-// 供 LordPE.rc 使用
+// Microsoft Visual C++ generated include file.
+// Used by LordPE.rc
 //
 #define IDD_DIALOG_MAIN                 101
 #define IDI_ICON_ICON                   103
@@ -16,10 +16,13 @@
 #define IDD_DIALOG_RELOCATION_TABLE     118
 #define IDD_DIALOG_BOUND_IMPORT_TABLE   119
 #define IDD_DIALOG_IAT_TABLE            120
+#define IDD_DIALOG_ADD_SHELLCODE        121
+#define IDD_DIALOG_ADD_SHELL            121
 #define IDC_BUTTON_PE_VIEWER            1002
 #define IDC_BUTTON_ABOUT                1003
 #define IDC_BUTTON_LOGOUT               1004
 #define IDC_BUTTON_EXIT                 1004
+#define IDC_BUTTON_ADD_SHELLCODE        1005
 #define IDC_LIST_PROCESS                1011
 #define IDC_LIST_MODULE                 1012
 #define IDC_EDIT_ENTRY_POINT            1025
@@ -76,6 +79,7 @@
 #define IDC_EDIT_DATA_DIRECTORY_SIZE12  1058
 #define IDC_EDIT_DATA_DIRECTORY_RVA1    1059
 #define IDC_BUTTON_EXPORT_TABLE         1060
+#define IDC_BUTTON_SRC_PATH             1061
 #define IDC_EDIT1                       1062
 #define IDC_EDIT_EXPORT_TABLE           1062
 #define IDC_EDIT_IMPORT_TABLE           1063
@@ -88,14 +92,18 @@
 #define IDC_BUTTON_BOUND_IMPORT         1067
 #define IDC_EDIT_IAT_TABLE              1067
 #define IDC_BUTTON_IAT                  1068
+#define IDC_EDIT_SHELL_PATH             1070
+#define IDC_EDIT_SRC_PATH               1071
+#define IDC_BUTTON_SHELL_PATH           1072
+#define IDC_BUTTON_START                1073
 
 // Next default values for new objects
 // 
 #ifdef APSTUDIO_INVOKED
 #ifndef APSTUDIO_READONLY_SYMBOLS
-#define _APS_NEXT_RESOURCE_VALUE        117
+#define _APS_NEXT_RESOURCE_VALUE        125
 #define _APS_NEXT_COMMAND_VALUE         40001
-#define _APS_NEXT_CONTROL_VALUE         1068
+#define _APS_NEXT_CONTROL_VALUE         1074
 #define _APS_NEXT_SYMED_VALUE           101
 #endif
 #endif
