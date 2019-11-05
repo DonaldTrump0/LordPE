@@ -293,7 +293,7 @@ void shellcode(const char* pFilePath) {
 		TerminateProcess(pi.hProcess, 1);
 	}
 	// 修改OEP
-	ctx.Eax = pSrcOptionalHeader32->AddressOfEntryPoint + pSrcOptionalHeader32->ImageBase;
+	ctx.Eax = pSrcOptionalHeader32->AddressOfEntryPoint + newImageBase;
 
 	// 设置Context并恢复主线程
 	SetThreadContext(pi.hThread, &ctx);
